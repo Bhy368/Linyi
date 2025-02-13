@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>情人节快乐</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff99cc, #ff66cc, #ff33cc);
+            background-size: 300% 300%;
+            animation: gradientShift 5s ease infinite;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .message {
+            font-size: 50px;
+            font-weight: bold;
+            color: #ff0066;
+            text-transform: uppercase;
+            animation: textEffect 4s ease-out infinite, colorChange 2s alternate infinite;
+            text-shadow: 0 0 20px rgba(255, 0, 102, 0.8), 0 0 30px rgba(255, 0, 102, 0.8), 0 0 40px rgba(255, 0, 102, 0.8);
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes textEffect {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+                letter-spacing: 5px;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+                letter-spacing: 2px;
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #ff0066;
+            }
+            50% {
+                color: #00ccff;
+            }
+            100% {
+                color: #ff0066;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">❤️ 情人节快乐！❤️</div>
+</body>
+</html>
